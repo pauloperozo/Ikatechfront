@@ -5,7 +5,8 @@ const Texto = () => {
     }
     
     const titulos = {
-        "margin-left":"10px"
+        "margin-left":"10px",
+        "font-weight": "bold"
     }
 
     return (
@@ -13,18 +14,21 @@ const Texto = () => {
         <div style={detalle}>
             
             <span style={titulos}>Detalle Del Producto</span>
-            <div class="text-center">
+            <div class="text-justify">
                 <hr class="hr hr-blurry" />
                 <p>
-                Integer ac quam ipsum. Etiam imperdiet sed ante sed auctor. Praesent ac mauris sit amet diam imperdiet vulputate. Curabitur eget accumsan lacus. Vivamus condimentum sem vitae leo rutrum commodo non quis mi. Curabitur bibendum imperdiet ante, vel congue ipsum blandit vitae. Mauris a nisl non mi viverra accumsan. Nam non tristique eros. Aenean eu facilisis nulla. Nulla placerat at neque sit amet auctor. Sed lobortis, augue vestibulum porta egestas, nisl ante hendrerit tellus, vel placerat magna lectus vitae urna. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed accumsan justo nec urna euismod, in iaculis nisl porta. Duis condimentum sit amet est sit amet eleifend. Quisque elementum elit vitae varius placerat. Sed semper convallis est. 
+                El zapato es un accesorio pedestre de la vestimenta hecho con la intención de proveer protección y comodidad al pie, mientras este realiza varias actividades. Al conjunto de todo tipo de accesorios pedestres se le denomina calzado.
+                Los zapatos, como el resto de las prendas, también se diseñan atendiendo a fines estéticos y/u ortopédicos. El diseño de los zapatos ha variado enormemente a través del tiempo y de cultura en cultura, con su apariencia originalmente ligada a sus funciones. Adicionalmente, la moda ha dictado frecuentemente muchos elementos de diseño, como la altura de los tacones y el tejido de estos.
+                El calzado contemporáneo varía ampliamente en estilo, complejidad y costo. Una sandalia básica puede consistir en una suela delgada y un amarre simple. Los zapatos de moda pueden estar hechos de materiales muy caros en construcciones complejas y vendidos por miles de dólares el par. Otros zapatos son para propósitos muy específicos, tales como los diseñados para escalada de montañas o esquiar.
                 </p>
             </div>
 
             <span style={titulos}>Tecnologias</span>
-            <div class="text-center">
+            <div class="text-justify">
                 <hr class="hr hr-blurry" />
                 <p>
-                Mauris porttitor auctor tempor. Vivamus et elit sed mauris sodales tincidunt. Vestibulum vel lectus blandit, imperdiet neque eget, gravida massa. Nam feugiat, ante eget ultricies pharetra, mauris neque tincidunt lorem, fermentum sodales purus nisl ac orci. Aenean in purus ac velit vestibulum feugiat. Sed vestibulum id urna nec tempor. Aliquam id nisl eu lorem iaculis molestie vel sed dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus at quam orci. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed rhoncus id nisi et sodales. Phasellus lobortis iaculis neque, in dapibus nunc blandit ultrices. Nunc faucibus quis arcu sed gravida. 
+                Durante este 2022 se ha producido una importante transformación digital en el sector calzado, existiendo un gran potencial a nivel internacional dentro del sector. El calzado tiene grandes posibilidades de innovación marcado por nuevas tecnologías y nuevas funcionalidades que transformarán significativamente la realidad actual del tejido empresarial.
+                Anteriormente estuvimos hablando en este blog sobre el Diseño y visualización de calzado en 3D, con software específicos para dar mayor realismo a nuestros diseños de calzado y así evitar realizar en muchos casos los costosos prototipos físicos, contando con la ventaja de que la mayoría de estos software permiten trabajar posteriormente la parte técnica del ajuste, patronaje y escalado. Pero hoy toca enseñaros como hacer diseño de calzado con CorelDRAW.
                 </p>
             </div>
 

@@ -1,4 +1,6 @@
 ///////////////////////////////////////////////////////////////
+import 'bootstrap-icons/font/bootstrap-icons.css'
+///////////////////////////////////////////////////////////////
 import HeaderSuperior from '../header_superior'
 import HeaderInferior from '../header_inferior'
 import HeaderMenu from '../header_menu'
@@ -17,7 +19,7 @@ const Home = () => {
             <ProductoDetalle/>
             <span class="d-block p-2 bg-light text-dark"> Completa Tu Look </span>
             <ListadoSuperior/>
-            <span class="d-block p-2 bg-light text-dark"> Producto Recomendados </span>
+            <span class="d-block p-2 bg-light text-dark"> Productos Recomendados </span>
             <ListadoInferior/>
             <Footer />
         </div>

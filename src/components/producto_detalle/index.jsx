@@ -10,7 +10,7 @@ const ProductoDetalle = () => {
             <hr className="hr" />
 
             <div className="row">
-
+            <span>Hush Puppies / Calazados / Zapatillas Hombre</span>
                 <div className="col-md-1"></div>
 
                 <div className="col-md-6">
