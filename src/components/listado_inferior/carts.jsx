@@ -1,13 +1,12 @@
 ///////////////////////////////////////////////////////////////
 import _ from 'lodash'
+import recurso from '../../resources/index'
 ///////////////////////////////////////////////////////////////
 const Card = () => {
 
-    const randimg = ()=> {
-        const img = _.sample(["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg","9.jpg","10.jpg","11.jpg","12.jpg","13.jpg","14.jpg","15.jpg","16.jpg","17.jpg","18.jpg","19.jpg","20.jpg"])
-        return `img/zapatos/${img}`
-    }
-
+    const item  =  _.sample(recurso)
+    const items =  _.sampleSize(recurso,3)
+    
     const img = {"padding": "10px"}
     const div = {"border":"none"} 
     const but = {"width": "100%"}
@@ -17,16 +16,14 @@ const Card = () => {
 
     return (
        <>
-            <img style={img_principal} src={randimg()} className="img-fluid" alt="Wild Landscape" />
+            <img style={img_principal} src={`img/zapatos/${item.foto}`} className="img-fluid" alt="Wild Landscape" />
             <div className="card" style={div}>
                 <div className="card-body">
                     <div className="row">
-                        <div className="col-md-4"><img src={randimg()} style={img_secundarias} className="img-fluid" alt="Wild Landscape" /></div>          
-                        <div className="col-md-4"><img src={randimg()} style={img_secundarias} className="img-fluid" alt="Wild Landscape" /></div>          
-                        <div className="col-md-4"><img src={randimg()} style={img_secundarias} className="img-fluid" alt="Wild Landscape" /></div>          
+                      {items.map(item => <div className="col-md-4"><img src={`img/zapatos/${item.foto}`} style={img_secundarias} className="img-fluid" alt="Wild Landscape" /></div> )}            
                     </div>
-                <h5 className="card-title text-center">Zapatos Hombres </h5>
-                <p className="card-text text-center">$ 00.00</p>
+                <h5 className="card-title text-center">{item.nombre}</h5>
+                <p className="card-text text-center">$ {item.precio.toFixed(2)}</p>
                 <hr className="hr" />
                 </div>
             </div>
